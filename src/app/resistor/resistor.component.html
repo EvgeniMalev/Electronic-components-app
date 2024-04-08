@@ -1,0 +1,18 @@
+<div class="resistor-container">
+    <h2>Add Resistor</h2>
+    <div class="form-group">
+      <label for="value">Value:</label>
+      <input type="text" id="value" [(ngModel)]="value" placeholder="Value (e.g., 100 Ohm)">
+    </div>
+    <div class="form-group">
+      <label for="tolerance">Tolerance:</label>
+      <input type="text" id="tolerance" [(ngModel)]="tolerance" placeholder="Tolerance (e.g., ±5%)">
+    </div>
+    <div class="form-group">
+      <label for="power-rating">Power Rating:</label>
+      <input type="text" id="power-rating" [(ngModel)]="powerRating" placeholder="Power Rating (e.g., 0.25W)">
+    </div>
+    <button (click)="addResistor()">Add Resistor</button>
+    <button routerLink="/">Back</button>
+  </div>
+  
