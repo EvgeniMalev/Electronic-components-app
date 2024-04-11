@@ -10,8 +10,7 @@ import { CapacitorService } from './capacitor.service';
 })
 export class CapacitorComponent implements OnInit {
   capacitor: Capacitor;
-  newCapacitor: Capacitor = { name: '', capacitance: null, tolerance: null, maxVoltage: null }; // New capacitor object
-
+  newCapacitor: Capacitor = { name: '', capacitance: null, tolerance: null, maxVoltage: null }; 
   constructor(private route: ActivatedRoute, private capacitorService: CapacitorService) { }
 
   ngOnInit(): void {
@@ -28,7 +27,7 @@ export class CapacitorComponent implements OnInit {
     this.capacitorService.addCapacitor(this.newCapacitor)
       .subscribe(capacitor => {
         console.log('New capacitor added:', capacitor);
-        // Optionally, reset the form or perform other actions after adding the capacitor
+        
       });
   }
 }
