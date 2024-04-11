@@ -11,6 +11,6 @@ export class ResistorComponent {
   powerRating: string = '';
 
   addResistor() {
-    // Add logic to save resistor properties
+   
   }
 }
