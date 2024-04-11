@@ -1,0 +1,30 @@
+<div>
+  <h2>Capacitor Details</h2>
+  <div *ngIf="capacitor">
+    <p><strong>ID:</strong> {{ capacitor.id }}</p>
+    <p><strong>Name:</strong> {{ capacitor.name }}</p>
+    <p><strong>Capacitance (Farads):</strong> {{ capacitor.capacitance }}</p>
+    <p><strong>Tolerance (%):</strong> {{ capacitor.tolerance }}</p>
+    <p><strong>Maximum Voltage (Volts):</strong> {{ capacitor.maxVoltage }}</p>
+  </div>
+  <div *ngIf="!capacitor">
+    <p>Capacitor not found!</p>
+  </div>
+
+  <h2>Add New Capacitor</h2>
+  <form (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="newCapacitor.name" name="name" required>
+
+    <label for="capacitance">Capacitance (Farads):</label>
+    <input type="number" id="capacitance" [(ngModel)]="newCapacitor.capacitance" name="capacitance" required>
+
+    <label for="tolerance">Tolerance (%):</label>
+    <input type="number" id="tolerance" [(ngModel)]="newCapacitor.tolerance" name="tolerance" required>
+
+    <label for="maxVoltage">Maximum Voltage (Volts):</label>
+    <input type="number" id="maxVoltage" [(ngModel)]="newCapacitor.maxVoltage" name="maxVoltage" required>
+
+    <button type="submit">Add Capacitor</button>
+  </form>
+</div>
