@@ -1,0 +1,17 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Resistor } from '../../models/resistor.model';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ResistorService {
+  private apiUrl = 'http://example.com/api/resistors'; // Replace with your backend API URL
+
+  constructor(private http: HttpClient) { }
+
+  addResistor(resistor: Resistor): Observable<Resistor> {
+    return this.http.post<Resistor>(this.apiUrl, resistor);
+  }
+}
