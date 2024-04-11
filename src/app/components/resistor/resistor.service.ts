@@ -7,7 +7,7 @@ import { Resistor } from '../../models/resistor.model';
   providedIn: 'root'
 })
 export class ResistorService {
-  private apiUrl = 'http://example.com/api/resistors'; // Replace with your backend API URL
+  private apiUrl = 'http://example.com/api/resistors'; 
 
   constructor(private http: HttpClient) { }
 
