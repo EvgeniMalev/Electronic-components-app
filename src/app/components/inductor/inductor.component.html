@@ -1,0 +1,17 @@
+<div class="inductor-container">
+    <h2>Add Inductor</h2>
+    <div class="form-group">
+      <label for="value">Value:</label>
+      <input type="text" id="value" [(ngModel)]="value" placeholder="Value ">
+    </div>
+    <div class="form-group">
+      <label for="numcoild">Number of coils:</label>
+      <input type="text" id="numcoild" [(ngModel)]="numcoild" placeholder="Number of coils">
+    </div>
+    <div class="form-group">
+      <label for="area-coil">Area of coil:</label>
+      <input type="text" id="area-coil" [(ngModel)]="area-coil" placeholder="Area of coil">
+    </div>
+    <button (click)="addInductor()">Add Inductor</button>
+    <button routerLink="/">Back</button>
+  </div>
