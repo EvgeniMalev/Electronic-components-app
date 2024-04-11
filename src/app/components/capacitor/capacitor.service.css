@@ -1,0 +1,35 @@
+.capacitor-details {
+  margin-bottom: 20px;
+}
+
+.capacitor-form {
+  margin-top: 20px;
+}
+
+.capacitor-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.capacitor-form input[type="text"],
+.capacitor-form input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.capacitor-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.capacitor-form button:hover {
+  background-color: #0056b3;
+}
+
