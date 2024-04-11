@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class InductorComponent {
   value: string = '';
-  num: string = '';
-  powerRating: string = '';
+  numcoils: string = '';
+  area-coil: string = '';
 
   addInductor() {
    
